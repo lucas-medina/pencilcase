@@ -13,7 +13,12 @@ I already have a [Codepen](http://github.com/lucas-medina/codepen) repository, a
 *Pencilcase* allows you to build small, specific projects. You can set a name for your pen, and the default template will be copied, followed by gulp tasks and a custom localhost provided by BrowserSync.
 
 ## Getting Started
-Make sure you have [**Node**](https://nodejs.org/en/) and NPM (preferably **Yarn**) already installed.
+Make sure you have [**Node**](https://nodejs.org/en/) and NPM (or Yarn) already installed **and updated**.
+
+Since the workflow runs with Gulp, Install Gulp globally.
+
+```$ npm install -g gulp```
+
 You can download or clone the repository if you have a console with Git installed. 
 
 ```$ git clone https://github.com/lucas-medina/pencilcase.git```
