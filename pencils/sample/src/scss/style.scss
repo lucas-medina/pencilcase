@@ -1,0 +1,52 @@
+@keyframes spin {
+	0% {
+		transform: rotateZ(0deg);
+	}
+	100% {
+		transform: rotateZ(360deg);
+	}
+}
+@keyframes morphBall {
+	0%, 50% {
+		border-radius: 0%;
+	}
+	100% {
+		border-radius: 120px;
+	}
+}
+@keyframes intro {
+	0% {
+		transform: translate(-50%, -50%) scale(0);
+	}
+	100% {
+		transform: translate(-50%, -50%) scale(1);
+	}
+}
+.wrapper {
+	margin: 0 auto;
+	max-width: 1300px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	animation: intro 2s ease 1s 1 forwards;
+}
+#item-check {
+	display: none;
+}
+.item {
+	display: block;
+	padding: 120px;
+	background-color: #123123;
+	animation: spin .5s linear 0s infinite, morphBall 1.5s ease 0s infinite alternate;
+	box-shadow: 0 0 13px rgba(0,0,0,.25);
+	transition: 1s ease;
+	cursor: pointer;
+	&:hover {
+		background-color: #13369a;
+	}
+	#item-check:checked + & {
+		animation-play-state: paused;
+		box-shadow: 0 0 33px rgba(0,0,0,.45);
+	}
+}
