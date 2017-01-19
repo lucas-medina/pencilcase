@@ -14,10 +14,12 @@ I already have a [Codepen](http://github.com/lucas-medina/codepen) repository, a
 ## Getting Started
 Make sure you have [**Node**](https://nodejs.org/en/) and NPM (preferably **Yarn**) already installed.
 You can download or clone the repository if you have a console with Git installed. 
+
 ```$ git clone https://github.com/lucas-medina/pencilcase.git```
 
 Install the required node modules through ```npm install``` or ```yarn install```.
 After installation is done, you can now use ```gulp``` command on your console. You need to specify a **pencil** on command-line. 
+
 ```$ gulp --pencil=my-new-codepen-project```
 
 A new project will be built with the given name, and it'll be stored at the */pencils/* folder.
